@@ -23,11 +23,16 @@ import {
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
     BrowserModule, 
+    FormsModule,
+    HttpClientModule,
     IonicModule.forRoot(), 
     AppRoutingModule, 
     BrowserAnimationsModule,
