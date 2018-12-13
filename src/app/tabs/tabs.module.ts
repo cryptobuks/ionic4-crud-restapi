@@ -6,10 +6,12 @@ import { FormsModule } from '@angular/forms';
 
 import { TabsPageRoutingModule } from './tabs.router.module';
 
+import { AddPageModule } from '../add/add.module';
+import { EditPageModule } from '../edit/edit.module';
+import { HomePageModule } from '../home/home.module';
+import { DetailsPageModule } from '../details/details.module';
+
 import { TabsPage } from './tabs.page';
-import { Tab1PageModule } from '../tab1/tab1.module';
-import { Tab2PageModule } from '../tab2/tab2.module';
-import { Tab3PageModule } from '../tab3/tab3.module';
 
 @NgModule({
   imports: [
@@ -17,9 +19,10 @@ import { Tab3PageModule } from '../tab3/tab3.module';
     CommonModule,
     FormsModule,
     TabsPageRoutingModule,
-    Tab1PageModule,
-    Tab2PageModule,
-    Tab3PageModule
+    HomePageModule,
+    AddPageModule,
+    EditPageModule,
+    DetailsPageModule
   ],
   declarations: [TabsPage]
 })
