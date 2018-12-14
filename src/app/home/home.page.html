@@ -4,7 +4,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <cdk-virtual-scroll-viewport cdkDropList itemSize="20" class="example-viewport" (cdkDropListDropped)="drop($event)">
     <ion-item *cdkVirtualFor="let p of products" class="example-item" href="/tabs/(details:{{p._id}})" cdkDrag>
       <ion-icon name="desktop" slot="start"></ion-icon>
